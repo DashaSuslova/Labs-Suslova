@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lasting memories</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+    <ul>
+      <li><a href="#Collections">Collections</a></li>
+      <li><a href="#Products">Products</a></li>
+      <li><a href="#About us">About us</a></li>
+      <li><a href="#Find a dealer">Find a dealer</a></li>
+    </ul>
+            </nav>
+        </header>
+        <div class="CTA">
+            <img src="1.jpg" alt="столовая">
+        </div>
+        <section id="Collections" class="Products">
+            <div class="Pr1">
+            <h2>our collections</h2>
+            <p>cental | olivio | moricot | curve | wire | fizz | rafael | chagall</p></div>
+            <div class="Pr2">
+                <article class="cards">
+                <img src="2.jpg" alt="ваза">
+                <p>Ready to become the centerpiece of your home</p>
+                </article>
+                <article class="cards">
+                <img src="3.jpg" alt="женщина">
+                <p>Believe us, this will be a real eye-catcher</p>
+                <button>watch more</button>
+                </article>
+            </div>
+        </section>
+    <section id="About us" class="About us">
+  <div class="AU">
+    <div class="Aucards">
+      <img src="4.jpg" alt="дерево">
+    </div>
+    <div class="Aucards">
+      <h2>About us</h2>
+      <p>At Lasting memories, we believe that furniture is more than just objects in a room — it’s the foundation<br>
+       of comfort, the expression of style, and the heart of every home.<br>
+       We carefully curate each piece in our collection, partnering with skilled artisans and trusted<br>
+       manufacturers to ensure exceptional craftsmanship and lasting durability. From sleek, modern designs<br>
+       to timeless classics, our furniture is crafted to blend functionality with aesthetic appeal, so you can<br>
+       create spaces that feel both beautiful and lived‑in.<br> 
+    </p>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <p>lastmemories@gmail.com</p>
+  <p>LASTING MEMORIES</p>  
+  <p>+1 (212) 555‑0199</p>
+</footer>
+    </body>
+</html>
