@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lasting Memories</title>
+    <meta name="description" content="Lasting Memories">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="header__nav" aria-label="Основное меню">
+    <ul class="menu">
+    <li class="menu__item">
+    <a class="menu__link" href="#collections">Collections</a>
+    </li>
+    <li class="menu__item">
+    <a class="menu__link" href="#products">Products</a>
+    </li>
+    <li class="menu__item">
+    <a class="menu__link" href="#about-us">About us</a>
+    </li>
+    <li class="menu__item">
+    <a class="menu__link" href="#find-dealer">Find a dealer</a>
+    </li>
+    </ul>
+    </nav>
+    </header>
+    <main class="main">
+
+    <section class="hero" aria-label="Lasting Memories">
+    <img
+    class="hero__image"
+    src="1.jpg"
+    alt="Столовая с мебелью"
+    width="1920"
+    height="1080"
+    fetchpriority="high">
+    </section>
+    <section id="collections" class="collections">
+    <header class="collections__header">
+    <h1 class="collections__title">Our collections</h1>
+    <p class="collections__text">
+    cental | olivio | moricot | curve | wire | fizz | rafael | chagall
+    </p>
+    </header>
+
+    <div id="products" class="products">
+    <article class="product-card">
+    <img
+    class="product-card__image"
+    src="2.jpg"
+    alt="Предмет мебели из коллекции"
+    width="800"
+    height="600"
+    loading="lazy">
+
+    <p class="product-card__text">
+    Ready to become the centerpiece of your home
+    </p>
+    </article>
+
+
+    <article class="product-card">
+    <img
+    class="product-card__image"
+    src="3.jpg"
+    alt="Женщина рядом с мебелью"
+    width="800"
+    height="600"
+    loading="lazy">
+    <p class="product-card__text">
+    Believe us, this will be a real eye-catcher
+    </p>
+    <a class="button product-card__button" href="#about-us">
+    Watch more</a>
+    </article>
+    </div>
+    </section>
+
+    <section id="about-us" class="about">
+    <div class="about__content">
+    <div class="about__image-wrapper">
+    <img
+    class="about__image"
+    src="4.jpg"
+    alt="Дерево в интерьере"
+    width="800"
+    height="700"
+    loading="lazy">
+    </div>
+
+    <div class="about__info">
+    <h2 class="about__title">About us</h2>
+    <p class="about__text">
+    At Lasting memories, we believe that furniture is more than just objects in a room —
+    it’s the foundation of comfort, the expression of style, and the heart of every home.
+    </p>
+    <p class="about__text">
+    We carefully curate each piece in our collection, partnering with skilled artisans
+    and trusted manufacturers to ensure exceptional craftsmanship and lasting durability.
+    From sleek, modern designs to timeless classics, our furniture is crafted to blend
+    functionality with aesthetic appeal, so you can create spaces that feel both beautiful
+    and lived-in.
+    </p>
+    </div>
+    </div>
+
+    </main>
+
+
+    <footer class="footer">
+    <address class="footer__contacts">
+    <a class="footer__link" href="mailto:lastmemories@gmail.com">
+    lastmemories@gmail.com</a>  
+    <span class="footer__logo">
+    LASTING MEMORIES</span>
+    <a class="footer__link" href="tel:+12125550199">
+    +1 (212) 555-0199 </a>
+    </address>
+    </footer>
+</body>
+</html>
