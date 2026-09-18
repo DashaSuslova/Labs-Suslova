@@ -84,7 +84,7 @@
     <img
     class="about__image"
     src="4.jpg"
-    alt="Дерево в интерьере"
+    alt="Кожа в интерьере"
     width="800"
     height="700"
     loading="lazy">
@@ -103,7 +103,6 @@
     functionality with aesthetic appeal, so you can create spaces that feel both beautiful
     and lived-in.
     </p>
-    </div>
     </div>
 
     </main>
