@@ -67,16 +67,20 @@ img {
 }
 .about {
     display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
 }
-.about__image{
+.about__image {
     width: 50%;
 }
 .about__image img {
     width: 100%;
-    border-radius: 0 5px 5px 0;
+    display: block;
 }
-.about__content {
-    widht: 50%;
+.about__info {
+    width: 50%;
+    padding: 40px;
 }
 .about__title {
     color: #3a3636;
