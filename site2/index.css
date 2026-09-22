@@ -107,7 +107,7 @@ img {
         gap: 20px;
         flex-wrap: wrap;
     }
-    .products,{
+    .products{
         flex-direction: column;
     }
     .product-card,
