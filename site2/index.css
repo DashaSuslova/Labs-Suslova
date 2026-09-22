@@ -98,10 +98,11 @@ img {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--accent-color);
+    gap: 50px;
     margin-top: 70px;
-    padding: 40px 50px;
+    padding: 50px;
     align-items: center;
 }
 .footer__link {
