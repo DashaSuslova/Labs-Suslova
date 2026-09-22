@@ -95,7 +95,7 @@ img {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;;
+    padding-left: 100px;
     color: var(--accent-color);
 }
 .footer__link {
