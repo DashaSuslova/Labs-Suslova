@@ -99,8 +99,8 @@ img {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
     color: var(--accent-color);
+    margin-top: 20px;
 }
 .footer__link {
     color: var(--accent-color);
