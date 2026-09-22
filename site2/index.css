@@ -104,6 +104,7 @@ img {
     margin-top: 70px;
     padding: 50px;
     align-items: center;
+    font-size: 30px;
 }
 .footer__link {
     color: var(--accent-color);
@@ -128,7 +129,7 @@ img {
     }
     .collections__title,
     .about__title {
-        font-size: 36px;
+    font-size: 36px;
     }
     .footer {
         flex-direction: column;
