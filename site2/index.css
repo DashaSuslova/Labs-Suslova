@@ -68,7 +68,7 @@ img {
 .about {
     display: flex;
     align-items: center;
-    gap: 0;
+    width: 100%;
     margin-top: 70px;
 }
 .about__image,
@@ -107,8 +107,7 @@ img {
         gap: 20px;
         flex-wrap: wrap;
     }
-    .products,
-    .about{
+    .products{
         flex-direction: column;
     }
     .product-card,
