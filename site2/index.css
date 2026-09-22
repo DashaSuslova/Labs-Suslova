@@ -1,8 +1,4 @@
-:root {
-    --main-color: #262323;
-    --text-color: #534d4d;
-    --accent-color: #7d3302;
-}
+
 * {
     box-sizing: border-box;
 }
