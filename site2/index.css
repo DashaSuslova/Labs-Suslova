@@ -76,7 +76,8 @@ img {
 }
 .about__image img {
     width: 100%;
-    display: block;
+    height: 600px;
+    object-fit: cover;
 }
 .about__info {
     width: 50%;
