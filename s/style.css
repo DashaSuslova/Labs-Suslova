@@ -22,3 +22,10 @@ p{
   font-weight: 300;
   color: #000000;
 }
+.catalog__grid{
+ max-width: 1440px;
+ margin: 80px;
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ gap: 24px;
+}
