@@ -22,15 +22,4 @@ p{
   font-weight: 300;
   color: #000000;
 }
-.catalog__grid{
- max-width: 1440px;
- margin: 80px;
- display: grid;
- grid-template-columns: repeat(12, 1fr);
- gap: 24px;
- outline: 1px solid red;
-}
-.catalog__grid > * {
- outline: 1px solid blue;       /* Синяя рамка вокруг каждой карточки */
- background: rgba(0, 0, 255, 0.1); /* Полупрозрачный фон для наглядности */
-}
+
