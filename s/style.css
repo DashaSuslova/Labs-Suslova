@@ -30,3 +30,7 @@ p{
  gap: 24px;
  outline: 1px solid red;
 }
+.catalog__grid > * {
+ outline: 1px solid blue;       /* Синяя рамка вокруг каждой карточки */
+ background: rgba(0, 0, 255, 0.1); /* Полупрозрачный фон для наглядности */
+}
