@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="assets/IconBrause.png" type="favicon" />
+    <title>TIARA DESIGN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Подключаем шрифт Manrope -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Экран home -->
+    <header class="header" id="home">
+      <a class="header__logo" href="#home">TIARA DESIGNER</a>
+      <button
+        class="header__toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="site-menu" aria-label="Main menu" hidden>
+        <a class="menu__link" href="#home">Home</a>
+        <a class="menu__link" href="#about">About</a>
+        <a class="menu__link" href="#portfolio">Portfolio</a>
+        <a class="menu__link" href="#contact">Contact</a>
+        <a class="menu__link" href="#clients">Clients</a>
+      </nav>
+
+      <div class="hero">
+        <picture>
+          <source
+            srcset="assets/Banner-mobile.jpg"
+            media="(max-width: 768px)"
+          />
+          <img class="hero__portrait" src="assets/Banner.jpg" alt="Banner" />
+        </picture>
+        <a class="button hero__button" href="#contact"
+          >Sign up for a consultation</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Экран About -->
+      <section class="about" id="about">
+        <div class="about__content">
+          <h2>TIARA DESIGN — Crafting Digital Experiences That Convert</h2>
+          <p class="about__intro">
+            We design websites and digital products that are intuitive,
+            beautiful, and built to grow your business.
+          </p>
+          <div class="about__bottom">
+            <div class="about__image" role="img" aria-label="Image placeholder">
+              <img src="assets/Work5.jpg" alt="Работа5" />
+            </div>
+            <div class="about__text">
+              <p>
+                I believe that great design isn’t just about how something looks
+                — it’s about how it feels and how it works. At TIARA DESIGN, I
+                don’t just build websites; I craft digital experiences that
+                connect with your audience and support your business goals.
+              </p>
+              <a class="button" href="#contact">Sign up for a consultation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Экран My portfolio -->
+      <section class="history" id="portfolio">
+        <h2>MY PORTFOLIO</h2>
+        <div class="history__grid">
+          <article class="history-card">
+            <span class="history-card__number">01 - LUXURY LIVING</span>
+            <div class="history-card__image">
+              <img src="assets/Work1.jpg" alt="Work1" />
+            </div>
+            <p>
+              A premium real estate website with elegant layouts, refined
+              typography, and beautiful property photography.
+            </p>
+          </article>
+          <article class="history-card">
+            <span class="history-card__number">02 - STUDIO FORMA</span>
+            <div class="history-card__image">
+              <img src="assets/Work2.jpg" alt="Work2" />
+            </div>
+            <p>
+              A minimalist creative studio website featuring bold typography,
+              balanced layouts, and a strong visual identity.
+            </p>
+          </article>
+          <article class="history-card">
+            <span class="history-card__number">03 - DAILY BREW</span>
+            <div class="history-card__image">
+              <img src="assets/Work3.jpg" alt="Work3" />
+            </div>
+            <p>
+              A cozy coffee shop website with warm colors, inviting photography,
+              and a clear, stylish menu.
+            </p>
+          </article>
+          <article class="history-card">
+            <span class="history-card__number">04 - SKIN RITUAL</span>
+            <div class="history-card__image">
+              <img src="assets/Work4.jpg" alt="Work4" />
+            </div>
+            <p>
+              A modern skincare store with soft colors, clean design, and an
+              easy shopping experience.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- Экран Clients -->
+      <section class="clients" id="clients">
+        <div class="clients__heading" id="clients">
+          <h2>WHAT CLIENTS SAY</h2>
+          <div class="clients__controls">
+            <button
+              class="clients__arrow"
+              type="button"
+              data-direction="prev"
+              aria-label="Previous testimonials"
+            >
+              &#8592;
+            </button>
+            <button
+              class="clients__arrow"
+              type="button"
+              data-direction="next"
+              aria-label="Next testimonials"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+
+        <div class="clients__viewport">
+          <div class="clients__track">
+            <article class="client-card">
+              <img
+                class="client-card__photo"
+                src="assets/Clients1.jpg"
+                alt="Asa Walter"
+                loading="lazy"
+              />
+              <h3>Asa Walter</h3>
+              <p>
+                Incredibly talented designer who truly listens. Delivered our
+                brand identity ahead of schedule — couldn't be happier.
+              </p>
+            </article>
+
+            <article class="client-card client-card--border">
+              <img
+                class="client-card__photo"
+                src="assets/Clients2.jpg"
+                alt="Rachel Morrison"
+                loading="lazy"
+              />
+              <h3>Rachel Morrison</h3>
+              <p>
+                Brought our vision to life with elegance and precision. The logo
+                is exactly what we needed but never could've described.
+                Brilliant work.
+              </p>
+            </article>
+
+            <article class="client-card">
+              <img
+                class="client-card__photo"
+                src="assets/Clients3.jpg"
+                alt="Daniel Kessler"
+                loading="lazy"
+              />
+              <h3>Daniel Kessler</h3>
+              <p>
+                Fast, professional, and genuinely creative. Redesigned our
+                entire pitch deck in 48 hours and made us look like a million
+                bucks.
+              </p>
+            </article>
+
+            <article class="client-card client-card--border">
+              <img
+                class="client-card__photo"
+                src="assets/Clients4.jpg"
+                alt="Sophie Laurent"
+                loading="lazy"
+              />
+              <h3>Sophie Laurent</h3>
+              <p>
+                Rare combination of taste and reliability. Every revision was on
+                point, every deadline met. Will absolutely hire again.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Экран Contact -->
+      <section class="contact" id="contact">
+        <div class="contact__content">
+          <h2>READY TO START?</h2>
+          <p>Drop your details — let’s chat</p>
+          <form class="contact__form">
+            <label class="visually-hidden" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+              autocomplete="name"
+              required
+            />
+            <label class="visually-hidden" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <label class="visually-hidden" for="brief">Brief</label>
+            <input id="brief" name="brief" type="text" placeholder="Brief" />
+            <button class="button" type="submit">
+              Sign up for a consultation
+            </button>
+          </form>
+        </div>
+        <div
+          class="contact__image"
+          role="img"
+          aria-label="Decorative image placeholder"
+        >
+          <img src="assets/Contact.jpg" alt="Contactimg" />
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <a class="footer__logo" href="#home">TIARA DESIGNER</a>
+      <nav class="footer__nav" aria-label="Footer menu">
+        <a href="#home">Home</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#clients">Clients</a>
+        <a href="#portfolio">Portfolio</a>
+      </nav>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
