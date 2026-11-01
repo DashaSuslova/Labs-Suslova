@@ -1,0 +1,469 @@
+/* Общие настройки */
+:root {
+  --cream: #d9cbbe;
+  --wine: #79152e;
+  --blue: #284766;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: black;
+  font-family: "Manrope", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+}
+h2 {
+  font-size: 27px;
+  font-weight: 400;
+}
+:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+}
+/* Кнопки и шапка */
+.button {
+  display: inline-block;
+  padding: 12px 15px;
+  border: 0;
+  background: var(--blue);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+.button:hover {
+  background: white;
+  color: var(--blue);
+  border: var(--blue) 2px solid;
+}
+.header {
+  position: relative;
+  padding: 28px;
+  background: var(--cream);
+  width: 100%;
+}
+.header__logo {
+  position: relative;
+  z-index: 200;
+}
+.header__logo {
+  font-weight: 400;
+  font-size: 27px;
+  color: black;
+  padding-left: 37px;
+}
+.header__toggle {
+  position: absolute;
+  z-index: 200;
+  top: 31px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 37px 4px 4px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__toggle span {
+  width: 45px;
+  height: 2px;
+  background: black;
+}
+.menu {
+  position: absolute;
+  z-index: 100;
+  top: 75px;
+  right: 4.4%;
+  width: 210px;
+  padding: 18px 22px;
+  background: white;
+  box-shadow: 0 8px 24px #00000018;
+}
+.menu[hidden] {
+  display: none;
+}
+.menu__link {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px;
+  color: black;
+}
+/* Баннер и расположение кнопки */
+.hero {
+  position: relative;
+  max-width: 1320px;
+  min-height: 651px;
+  margin: 0 auto;
+}
+.hero__portrait {
+  position: absolute;
+  bottom: -28px;
+  width: 100%;
+  height: auto;
+  max-height: 605px;
+  object-fit: contain;
+  object-position: center 20%;
+}
+.hero__button {
+  position: absolute;
+  z-index: 200;
+  right: 20%;
+  bottom: 70px;
+}
+/* Экран About */
+.about {
+  display: flex;
+  min-height: 651px;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 24px;
+  background: white;
+}
+.about__content {
+  width: min(680px, 100%);
+}
+.about h2 {
+  margin: 0 0 14px;
+  color: var(--wine);
+}
+.about__intro {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+.about__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+.about__image img {
+  width: 100%;
+  height: 280px;
+  aspect-ratio: 4 / 3;
+}
+.about__text p {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+/* Экран Portfolio */
+.history {
+  padding: 48px 60px 58px;
+  background: var(--wine);
+  color: white;
+}
+.history h2 {
+  margin: 0 0 40px;
+  font-size: 27px;
+  font-weight: 400;
+}
+.history__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.history-card__number {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+.history-card__image img {
+  width: 100%;
+  height: 400px;
+  aspect-ratio: 4 / 3;
+}
+.history-card p {
+  margin: 20px 0 0;
+  font-size: 18px;
+  line-height: 1.45;
+}
+/* Экран Contact */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 150px;
+}
+.contact__content {
+  padding: 105px 11%;
+}
+.contact h2 {
+  margin: 0 0 15px;
+}
+.contact__content > p {
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: min(310px, 100%);
+}
+.contact__form input {
+  width: 100%;
+  height: 35px;
+  padding: 15px 10px;
+  border: 1px solid #bcbcbc;
+  background: var(--white);
+  font-size: 18px;
+}
+.contact__form .button {
+  margin: 35px 0;
+}
+.contact__image img {
+  width: 100%;
+  height: 90%;
+  aspect-ratio: 4 / 3;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Экран Clients */
+.clients {
+  padding: 20px 5.5% 40px 5.5%;
+  background: white;
+}
+.clients__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.clients h2 {
+  margin: 0;
+  color: var(--wine);
+}
+.clients__controls {
+  display: flex;
+  gap: 10px;
+}
+.clients__arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--blue);
+  background: white;
+  color: var(--blue);
+  font-size: 22px;
+}
+.clients__arrow:hover {
+  background: var(--blue);
+  color: white;
+}
+.clients__viewport {
+  overflow: hidden;
+}
+.clients__track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+}
+.client-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 32px 22px;
+  background: var(--cream);
+  color: var(--wine);
+  text-align: center;
+  border: var(--wine) 2px solid;
+}
+.client-card--border {
+  background: white;
+  border: var(--wine) 2px solid;
+  color: var(--wine);
+}
+.client-card__photo {
+  margin-top: 25px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.client-card h3 {
+  margin: 25px 0 5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.client-card p {
+  margin: 25px;
+  font-size: 18px;
+  text-align: center;
+}
+.clients__button {
+  display: table;
+  margin: 28px 0 0 auto;
+}
+/* Footer */
+.footer {
+  display: flex;
+  min-height: 170px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 42px 4.2%;
+  background: var(--wine);
+}
+.footer__logo {
+  font-size: 27px;
+  color: white;
+}
+footer a {
+  color: white;
+  font-size: 18px;
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 14px 30px;
+}
+/* Мобильная версия */
+@media (max-width: 375px) {
+  .header {
+    min-height: 180px;
+    position: relative;
+    z-index: 300;
+    padding-inline: 10px;
+  }
+  .header__logo,
+  .header__toggle {
+    padding-inline: 10px;
+    right: 10px;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    overflow: visible;
+  }
+
+  .hero__portrait {
+    position: absolute;
+    width: 100vw;
+    height: 520px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .hero__button {
+    position: absolute;
+    z-index: 200;
+    right: 8px;
+    bottom: 45px;
+  }
+  .about {
+    min-height: auto;
+    padding: 40px 5%;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+  .about h1 br,
+  .about__intro br {
+    display: none;
+  }
+  .about__bottom {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .about__image {
+    min-height: 100px;
+  }
+  .about__text p,
+  .contact__content > p {
+    font-size: 16px;
+  }
+  .about__text .button {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .history {
+    padding: 24px 4%;
+  }
+  .history__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .history h2 {
+    margin-bottom: 20px;
+  }
+  .history-card__number {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .history-card p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+
+    min-height: 260px;
+  }
+  .contact__image {
+    display: none;
+  }
+  .contact__content {
+    padding: 20px 5%;
+  }
+  .contact h2 {
+    font-size: 22px;
+  }
+  .contact__form input {
+    height: 40px;
+    font-size: 20px;
+  }
+  .clients__button {
+    display: none;
+  }
+  .clients__track {
+    grid-auto-columns: 100%;
+  }
+  .client-card {
+    min-height: 240px;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 120px;
+    padding: 20px 4%;
+  }
+  .footer__logo {
+    font-size: 30px;
+    justify-self: baseline;
+    align-self: baseline;
+  }
+  .footer__nav {
+    grid-template-columns: 1fr;
+  }
+  .footer__nav a {
+    font-size: 22px;
+  }
+}
